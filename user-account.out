@@ -1,0 +1,9 @@
+uid=1234(user1) gid=1001(students) groups=1001(students)
+Last password change					: Nov 09, 2026
+Password expires					: Feb 07, 2027
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 7
+user1 P 2026-11-09 0 90 7 -1

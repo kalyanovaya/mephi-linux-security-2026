@@ -1,0 +1,11 @@
+Initial owner
+user1:students 644 /home/user1/owner-demo.txt
+
+Ordinary chown (expected: Operation not permitted)
+/usr/bin/chown: changing ownership of '/home/user1/owner-demo.txt': Operation not permitted
+Exit code: 1
+
+chown with CAP_CHOWN (expected: success)
+Exit code: 0
+root:root 644 /home/user1/owner-demo.txt
+/home/user1/security-lab/chown-cap cap_chown=ep

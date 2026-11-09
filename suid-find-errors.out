@@ -1,0 +1,2 @@
+find: '/proc/1981/task/1981/fdinfo/6': No such file or directory
+find: '/proc/1981/fdinfo/5': No such file or directory

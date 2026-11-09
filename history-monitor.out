@@ -1,0 +1,2 @@
+    1  passwd
+    2  { history > /home/user1/monitor-history.out; history -w; exit; }

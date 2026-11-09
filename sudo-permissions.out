@@ -1,0 +1,8 @@
+Matching Defaults entries for user1 on mephi-linux:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User user1 may run the following commands on mephi-linux:
+    (root) NOPASSWD: /usr/bin/date ^--set=@[0-9]+$
+
+Check that an unrelated command is not permitted
+Exit code: 1

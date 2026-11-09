@@ -1,0 +1,6 @@
+    PID    PPID  RUID  EUID RUSER    COMMAND         COMMAND
+   1745    1744  1000     0 student  sudo            sudo env HISTFILE=/root/mephi-command-history HISTSIZE=10000 HISTFILESIZE=20000 HISTCONTROL= PS1=MEPHI-root#  bash --noprofile --norc -i
+   1746    1745  1000     0 student  sudo            sudo env HISTFILE=/root/mephi-command-history HISTSIZE=10000 HISTFILESIZE=20000 HISTCONTROL= PS1=MEPHI-root#  bash --noprofile --norc -i
+   1977    1976  1000     0 student  sudo            sudo -u user1 env HISTFILE=/home/user1/.bash_history-monitor HISTCONTROL= PS1=user1-monitor$  bash --noprofile --norc -i
+   1978    1977  1000     0 student  sudo            sudo -u user1 env HISTFILE=/home/user1/.bash_history-monitor HISTCONTROL= PS1=user1-monitor$  bash --noprofile --norc -i
+   1980    1979  1234     0 user1    passwd          passwd

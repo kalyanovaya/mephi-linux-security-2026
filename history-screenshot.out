@@ -1,0 +1,2 @@
+    1  clear
+    2  { printf 'Student code: 374383\n'; id user1; sudo stat -c '%A (%a) %U:%G %n' /home/user1 /home/user1/security-lab/cat-suid /home/user1/security-lab/chown-cap; sudo getcap /home/user1/security-lab/chown-cap; sudo -l -U user1; tail -n 1 /home/student/mephi-linux-security-2026/reboot-check.out; history > /home/student/mephi-linux-security-2026/history-screenshot.out; }

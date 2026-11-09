@@ -1,0 +1,47 @@
+Actual reboot verification
+Before: 9dd4c867-3c39-4a30-ac86-ffa210657d2b
+After:  328b758e-9250-4665-99af-5bbe8f2c9440
+
+User and password policy
+uid=1234(user1) gid=1001(students) groups=1001(students)
+students
+Last password change					: Nov 09, 2026
+Password expires					: Feb 07, 2027
+Password inactive					: never
+Account expires						: never
+Minimum number of days between password change		: 0
+Maximum number of days between password change		: 90
+Number of days of warning before password expires	: 7
+
+Persistent permissions
+750 user1:students /home/user1
+4750 root:students /home/user1/security-lab/cat-suid
+750 root:students /home/user1/security-lab/chown-cap
+/home/user1/security-lab/chown-cap cap_chown=ep
+
+set-UID after reboot
+/usr/bin/cat: /var/lib/mephi-security-lab/root-only.txt: Permission denied
+Ordinary cat denied as expected
+Root-only file read successfully. Student code: 374383
+
+Capability after reboot
+/usr/bin/chown: changing ownership of '/home/user1/owner-demo.txt': Operation not permitted
+Ordinary chown denied as expected
+root:root /home/user1/owner-demo.txt
+
+sudo after reboot: set the current time
+Mon Nov  9 21:55:33 MSK 2026
+Unrelated command is not permitted
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-cloud-init-users: parsed OK
+/etc/sudoers.d/90-mephi-user1-time: parsed OK
+/etc/sudoers.d/README: parsed OK
+               Local time: Mon 2026-11-09 21:55:33 MSK
+           Universal time: Mon 2026-11-09 18:55:33 UTC
+                 RTC time: Mon 2026-11-09 18:55:34
+                Time zone: Europe/Moscow (MSK, +0300)
+System clock synchronized: no
+              NTP service: active
+          RTC in local TZ: no
+
+ALL REBOOT CHECKS PASSED

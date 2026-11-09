@@ -1,0 +1,29 @@
+Before change
+2026-11-09T21:52:23,993702807+03:00
+Target epoch: 1794250403
+
+user1 without sudo (expected failure)
+/usr/bin/date: cannot set date: Operation not permitted
+Mon Nov  9 21:53:23 MSK 2026
+Exit code: 1
+
+user1 with sudo (expected success)
+Mon Nov  9 21:53:23 MSK 2026
+Exit code: 0
+
+After change
+2026-11-09T21:53:23,003962062+03:00
+
+Unrelated root command denied
+sudo: a password is required
+Exit code: 1
+Mon Nov  9 21:52:23 MSK 2026
+
+NTP restored
+               Local time: Mon 2026-11-09 21:52:23 MSK
+           Universal time: Mon 2026-11-09 18:52:23 UTC
+                 RTC time: Mon 2026-11-09 18:52:24
+                Time zone: Europe/Moscow (MSK, +0300)
+System clock synchronized: no
+              NTP service: active
+          RTC in local TZ: no

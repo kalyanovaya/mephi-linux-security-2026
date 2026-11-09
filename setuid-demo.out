@@ -1,0 +1,15 @@
+Ordinary cat (expected: Permission denied)
+/usr/bin/cat: /var/lib/mephi-security-lab/root-only.txt: Permission denied
+Exit code: 1
+
+set-UID cat (expected: success)
+Root-only file read successfully. Student code: 374383
+Exit code: 0
+  File: /var/lib/mephi-security-lab/root-only.txt
+  Size: 55        	Blocks: 8          IO Block: 4096   regular file
+Device: 253,1	Inode: 262272      Links: 1
+Access: (0600/-rw-------)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-11-09 21:51:46.227620619 +0300
+Modify: 2026-11-09 21:51:46.218620302 +0300
+Change: 2026-11-09 21:51:46.219620337 +0300
+ Birth: 2026-11-09 21:51:46.218620302 +0300

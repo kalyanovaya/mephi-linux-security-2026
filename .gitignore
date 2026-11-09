@@ -1,0 +1,13 @@
+# Only assignment artifacts belong in this public repository.
+.ssh/
+.config/
+*.pem
+*.key
+id_ed25519*
+id_rsa*
+*-access.txt
+*.utm/
+*.qcow2
+*.iso
+*.dmg
+*.in

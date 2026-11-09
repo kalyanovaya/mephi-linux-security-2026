@@ -1,0 +1,4 @@
+/etc/sudoers: parsed OK
+/etc/sudoers.d/90-cloud-init-users: parsed OK
+/etc/sudoers.d/90-mephi-user1-time: parsed OK
+/etc/sudoers.d/README: parsed OK
